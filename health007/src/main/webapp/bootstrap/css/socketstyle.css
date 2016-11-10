@@ -1,0 +1,120 @@
+﻿body {
+    font-family:sans-serif;/*字型*/
+    margin:0px;
+}
+
+.chat_box{
+    cursor:pointer;/*滑鼠游標圖案是 pointer*/
+    position:fixed;
+    bottom:50px; /*對齊底部*/
+    right:20px;
+    background-color:#1abc9c;
+    width: 70px;
+    height:70px;
+	border-radius:50px;
+    text-align:center;/*文字置中*/
+    line-height:70px;/*文字置中*/
+    color:white;
+    font-family:sans-serif;/*字型*/
+    font-size:25px;
+    border-style:soild;/*邊框*/
+    border-color:#e67e22;
+    z-index:3;
+}
+
+.msg_wrap{
+	z-index:3;
+	border:0.5px solid #bdc3c7;/*邊框*/
+}
+
+.msg_head {
+    background-color:#f39c12;
+    padding:15px;
+    color:white;
+    font-weight:bold;
+    border-radius:5px 5px 0px 0px;/*圓角*/
+}
+
+.msg_head {
+    background-color:#3498db;
+}
+.msg_body {
+    height:250px;
+    font-size:12px;
+    overflow:auto;  /*輸入內容超過產生捲軸*/
+    overflow-x:hidden;/*隱藏x軸卷軸*/
+}
+
+.msg_box {
+	position:fixed;
+	bottom:-5px;
+	width:250px;
+	background:white;
+	border-radius:5px 5px 0px 0px;
+}
+
+.close {
+    float:right;
+    cursor:pointer;/*滑鼠游標圖案是 pointer*/
+}
+
+.msg_input {
+    border:transparent;
+    border-top:1px solid #bdc3c7;
+    width:100%;
+    padding:5px;
+    -webkit-box-sizing:border-box;/*元素的內距和邊框將不會增加元素本身的寬度*/
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+.msg_a {/*對話四方形框框*/
+    margin-top:10px;
+    margin-right:40px;
+    margin-left:20px;
+    margin-bottom:5px;
+    min-height:15px;/*輸入空白的高度*/
+    padding:15px;
+    background-color:#c6dff7;
+    position:relative;
+    border-radius:5px;
+    word-wrap: break-word;/*文字強迫換行，太長的英文字，會自動切成兩半*/
+    font-family:sans-serif;/*字型*/
+}
+
+.msg_a:before{/*對話的前端三角形*/
+    content:"";
+    position:absolute;
+    width:0px;
+    height:0px;
+    top:7px;
+    left:-29px;
+    border:15px solid;
+    border-color:transparent #c6dff7 transparent transparent;
+}
+
+.msg_b {/*對話四方形框框*/
+    margin-top:10px;
+    margin-right:20px;
+    margin-left:40px;
+    margin-bottom:5px;
+    min-height:15px;/*輸入空白的高度*/
+    padding:15px;
+    background-color:#d9d9d9;
+    position:relative;
+    border-radius:5px;
+    word-wrap: break-word;/*文字強迫換行，太長的英文字，會自動切成兩半*/
+    font-family:sans-serif;/*字型*/
+}
+
+.msg_b:before{/*對話的前端三角形*/
+    content:"";
+    position:absolute;
+    width:0px;
+    height:0px;
+    top:7px;
+    right:-29px;
+    border:15px solid;
+    border-color:transparent transparent transparent #d9d9d9;
+}

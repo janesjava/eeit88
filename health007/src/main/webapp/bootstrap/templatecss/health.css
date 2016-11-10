@@ -1,0 +1,32 @@
+.sign{
+	background: url(/health/images/bg01.jpg) repeat; 
+	height: 50px;
+	width: 100%;
+	font-family:Consolas;
+	font-size:20px;
+}
+
+.title{
+/* 	background: blue;  */
+	height: 100px;
+}
+
+.function{
+	font-family:微軟正黑體 ; 
+	font-size:26px; 
+	color:gray;
+	min-width: 60px;
+	display: inline-block;
+	text-align: center;
+	/* Point */ 
+	padding-top: 30px; 
+	padding-bottom: 5px;
+}
+
+.foot{
+	background: url(/health/images/bg01.jpg) repeat;
+	height: 40px;
+	position: absolute;
+	bottom: 0;
+	width: 100%
+}
